@@ -88,7 +88,7 @@ onImageLoad(data) {
 ```
 
 ## Advanced Usage
-The `<img-loader>` component takes many attributes that allows you to customize the image. You can use the following table as a reference:
+The `<ionic3-Image-Cache>` component takes many attributes that allows you to customize the image. You can use the following table as a reference:
 
 | Attribute Name | Type | Description | Default Value |
 | --- | --- | --- | --- |
