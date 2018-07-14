@@ -55,12 +55,12 @@ import { IonicImageCacheConfig } from 'ionic3-image-cache';;
 
 export class HomePage {
 
-  constructor(public navCtrl: NavController, public ionicImageCacheCtrl:IonicImageCacheConfig) {
+  constructor(public navCtrl: NavController, public ionicImageCacheCfg:IonicImageCacheConfig) {
     
   }
   
   ionViewDidEnter(){
-   this.ionicImageCacheCtrl.blablabla = "whatever";
+   this.ionicImageCacheCfg.blablabla = "whatever";
   }
 
 }
