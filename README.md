@@ -8,6 +8,7 @@ A rewrite of Ionic Image Loader library that fixes the SVG issues, local URL det
 
 ## Features
 - Downloads images via a **native thread**. Images will download faster and they will not use the Webview's resources.
+- Preview images on click or tap - (can be disabled)
 - **Caches images** for later use. Remote URLs are counter matched with the file system file and returned.
 - Shows a **loading spinner** while the images are loading. (can be disabled and customised with other spinner names in ionic)
 - Allows setting a **fallback image** to be displayed in case the image you're trying to show doesn't exist on the web. (optional)
