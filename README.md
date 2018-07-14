@@ -1,6 +1,6 @@
 
 # ionic3-Image-Cache
-A rewrite of Ionic Image Loader library that fixes the SVG issues, local URL detection and base64 detection yet maintaining all other major features. This **Ionic** plugin also includes features such as image preview. 
+A rewrite of Ionic Image Loader library that fixes the SVG issues, local URL detection and base64 detection yet maintaining all other major features. This **Ionic** plugin also includes features such as image preview. Hats of to @riron for Image viewer 
 
 **Ionic** Module that loads images in a background thread and caches them for later use. Uses `FileTransfer` from `cordova-plugin-filetransfer`, and `cordova-plugin-file` via [`ionic-native`](https://github.com/driftyco/ionic-native) wrappers. This module helps to save Http requests to the server all the time thereby saving bandwidth and other HTTP related issues.
 
