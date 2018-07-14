@@ -51,11 +51,11 @@ export class AppModule {}
 
 **Then add `IonicImageCacheComponent` in your child coomponent**
 ```typescript
-import { IonicImageCacheComponent } from 'ionic3-image-cache';;
+import { IonicImageCacheConfig } from 'ionic3-image-cache';;
 
 export class HomePage {
 
-  constructor(public navCtrl: NavController, public ionicImageCacheCtrl:IonicImageCacheComponent) {
+  constructor(public navCtrl: NavController, public ionicImageCacheCtrl:IonicImageCacheConfig) {
     
   }
   
