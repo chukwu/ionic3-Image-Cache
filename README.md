@@ -111,28 +111,6 @@ The `<ionic3-Image-Cache>` component takes many attributes that allows you to cu
 **Note:** The default values can be changed using the controller instance.
 
 
-# Global Configuration
-This is optional but it is helpful if you wish to set the global configuration for all of your `<img-loader>` instances. To configure the module, inject the `ImageLoaderConfig` provider in your app's main component.
-```typescript
-import { ImageLoaderConfig } from 'ionic-image-loader';
-@Component({
-...
-})
-export class MyMainAppComponent {
-  
-  constructor(
-    private imageLoaderConfig: ImageLoaderConfig // optional, if you wish to configure the service 
-  ){
-    
-    // disable spinners by default, you can add [spinner]="true" to a specific component instance later on to override this
-    imageLoaderConfig.enableSpinner(false);
-    
-    // set the maximum concurrent connections to 10
-    imageLoaderConfig.setConcurrency(10);
-  }
-  
-}
-```
 
 <br><br>
 ## Contribution

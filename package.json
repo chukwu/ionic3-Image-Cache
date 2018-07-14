@@ -1,6 +1,6 @@
 {
     "name": "ionic3-image-cache",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "A Simple Ionic Image Cache for all types of images with preview modal",
     "main": "./dist/index.js",
     "typings": "./dist/index.d.ts",
