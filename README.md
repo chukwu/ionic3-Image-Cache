@@ -1,4 +1,6 @@
 
+## Note: This plugin was just released in the last 24 hours. I didnt have much night hours to fully publish it on NPM. It should be fully uploaded in the next 24 hours.
+
 # ionic3-Image-Cache
 A rewrite of Ionic Image Loader library that fixes the SVG issues, local URL detection and base64 detection yet maintaining all other major features. This **Ionic** plugin also includes features such as image preview. Hats of to @riron for Image viewer 
 
