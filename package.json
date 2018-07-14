@@ -1,0 +1,43 @@
+{
+    "name": "ionic3-image-cache",
+    "version": "0.0.4",
+    "description": "A Simple Ionic Image Cache for all types of images with preview modal",
+    "main": "./dist/index.js",
+    "typings": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "ngc": "ngc",
+        "build": "rm -rf dist && npm run ngc",
+        "publishPackage": "npm run build && npm publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chukwu/ionic3-Image-Cache"
+    },
+    "keywords": [],
+    "author": "Chukwu Ifeanyi",
+    "license": "MIT",
+    "homepage": "https://github.com/chukwu/ionic3-Image-Cache",
+    "devDependencies": {
+        "@angular/common": "5.2.10",
+        "@angular/compiler": "5.2.10",
+        "@angular/compiler-cli": "5.2.10",
+        "@angular/core": "5.2.10",
+        "@angular/forms": "^5.2.10",
+        "@angular/platform-browser": "5.2.10",
+        "@angular/platform-browser-dynamic": "5.2.10",
+        "@types/node": "^9.4.6",
+        "ionic-angular": "3.9.2",
+        "rxjs": "5.5.10",
+        "typescript": "2.6.2",
+        "zone.js": "0.8.26"
+    },
+    "dependencies": {
+        "@ionic-native/core": "^4.9.2",
+        "@ionic-native/file": "^4.9.2",
+        "@ionic-native/file-transfer": "^4.9.2",
+        "ionic-img-viewer": "^2.9.0"
+    }
+}
