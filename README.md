@@ -89,6 +89,7 @@ onImageLoad(data) {
 
 ## Advanced Usage
 The `<ionic3-Image-Cache>` component takes many attributes that allows you to customize the image. You can use the following table as a reference:
+```
 
 | Attribute Name | Type | Description | Default Value |
 | --- | --- | --- | --- |
