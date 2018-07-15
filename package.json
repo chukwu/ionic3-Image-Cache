@@ -1,6 +1,6 @@
 {
     "name": "ionic3-image-cache",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "A Simple Ionic Image Cache for all types of images with preview modal",
     "main": "./dist/index.js",
     "typings": "./dist/index.d.ts",
@@ -35,10 +35,8 @@
         "zone.js": "0.8.26"
     },
     "dependencies": {
-        "@ionic-native/core": "^4.9.2",
         "@ionic-native/file": "^4.9.2",
         "@ionic-native/file-transfer": "^4.9.2",
-        "build": "^0.1.4",
         "ionic-img-viewer": "^2.9.0"
     }
 }

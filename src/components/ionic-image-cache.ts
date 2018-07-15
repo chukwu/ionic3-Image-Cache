@@ -1,5 +1,5 @@
 import { IonicImageCacheConfig } from '../providers/ionic-image-cache-config';
-import { Component, Input, Output, NgZone, EventEmitter, ViewChild, ElementRef } from '@angular/core';
+import { Component, Input, Output, NgZone, EventEmitter, ViewChild, ElementRef, ViewEncapsulation } from '@angular/core';
 import { IonicImageCacheHelperProvider } from '../providers/ionic-image-cache-fileprocessor';
 import { Platform } from 'ionic-angular';
 import { FileEntry, RemoveResult, DirectoryEntry } from '@ionic-native/file';
@@ -76,7 +76,8 @@ import { ImageViewerController } from 'ionic-img-viewer';
     flex-wrap: nowrap;
   }
 `
-  ]
+  ],
+  encapsulation: ViewEncapsulation.None
 })
 export class IonicImageCacheComponent {
 

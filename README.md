@@ -1,6 +1,4 @@
 
-## Note: This Module was just released in the last 24 hours. I didnt have much night hours to fully publish it on NPM. It should be fully uploaded in the next 24 hours.
-
 # ionic3-Image-Cache
 A rewrite of Ionic Image Loader library that fixes the SVG issues, local URL detection and base64 detection yet maintaining all other major features. This **Ionic** plugin also includes features such as image preview. Hats of to @riron for Image viewer 
 
@@ -25,7 +23,7 @@ A rewrite of Ionic Image Loader library that fixes the SVG issues, local URL det
 npm install --save ionic3-image-cache
 ```
 
-#### 2. Install Required Plugins
+#### 2. Install Required Plugins and Dependency
 ```
 npm i --save @ionic-native/file
 ionic cordova plugin add cordova-plugin-file
@@ -34,6 +32,11 @@ ionic cordova plugin add cordova-plugin-file
 npm install --save @ionic-native/file-transfer
 ionic cordova plugin add cordova-plugin-file-transfer
 ```
+
+```
+npm install --save ionic-img-viewer
+```
+
 
 #### 3. Import `IonicImageCacheModule` module
 
@@ -49,23 +52,6 @@ import {IonicImageCacheModule} from 'ionic3-image-cache';
   ]
 })
 export class AppModule {}
-```
-
-**Then add `IonicImageCacheComponent` in your child coomponent**
-```typescript
-import { IonicImageCacheConfig } from 'ionic3-image-cache';;
-
-export class HomePage {
-
-  constructor(public navCtrl: NavController, public ionicImageCacheCfg:IonicImageCacheConfig) {
-    
-  }
-  
-  ionViewDidEnter(){
-   this.ionicImageCacheCfg.blablabla = "whatever";
-  }
-
-}
 ```
 
 # Usage
@@ -90,8 +76,8 @@ onImageLoad(data) {
 }
 ```
 
-## Advanced Usage
-The `<ionic3-Image-Cache>` component takes many attributes that allows you to customize the image. You can use the following table as a reference:
+## HTML attributes
+The `<ionic-image-cache>` component takes many attributes that allows you to customize the image. You can use the following table as a reference:
 ```
 
 | Attribute Name | Type | Description | Default Value |
@@ -110,8 +96,12 @@ The `<ionic3-Image-Cache>` component takes many attributes that allows you to cu
 | alt | string | Sets an alternative text when image fails on browser | N/A |
 | enableSpinner | boolean | Enable or disable spinner | true |
 
-**Note:** The default values can be changed using the controller instance.
+**Note:** Upcoming features. Please contribute your features.
 
+- Typescript options from controller
+- Clear cache
+- Max cache settings
+- Cache lifespan
 
 
 <br><br>
