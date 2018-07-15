@@ -5,7 +5,10 @@ import { Platform } from 'ionic-angular';
 import { FileEntry, RemoveResult, DirectoryEntry } from '@ionic-native/file';
 import { ImageViewerController } from 'ionic-img-viewer';
 
-const HTML_TEMPLATE = `
+
+@Component({
+  selector: 'ionic-image-cache',
+  template: `
   <div class="ionic-image-cache-prelative ionic-image-cache-container">
     <div *ngIf="((!srcUrl) && this.imageCacheConfig.spinnerEnabled)" text-center class="ionic-image-cache-absolute-center ionic-image-cache-progress-div">
       <ion-spinner [color]="spinnerColorString" [name]="spinnerNameString"></ion-spinner>
@@ -13,8 +16,9 @@ const HTML_TEMPLATE = `
     <img #realImage *ngIf="srcUrl" [src]="srcUrl" [alt]="altString" class="{{imgCssClass}}" (click)="presentImage($event, realImage)" />
     <img *ngIf="!srcUrl" [src]="fallback">
   </div>
-`;
-const CSS_STYLE = `
+`,
+  styles: [
+    `
   ionic-image-cache .ionic-image-cache-container {
     min-height: 20px;
   }
@@ -71,12 +75,8 @@ const CSS_STYLE = `
   ionic-image-cache .ionic-image-cache-display-flex.no-wrap {
     flex-wrap: nowrap;
   }
-`;
-
-@Component({
-  selector: 'ionic-image-cache',
-  template: HTML_TEMPLATE,
-  styles: [CSS_STYLE]
+`
+  ]
 })
 export class IonicImageCacheComponent {
 
