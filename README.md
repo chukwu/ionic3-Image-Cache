@@ -83,8 +83,6 @@ The `<ionic-image-cache>` component takes many attributes that allows you to cus
 | Attribute Name | Type | Description | Default Value |
 | --- | --- | --- | --- |
 | src | string | The image URL | N/A |
-| fallback | string | Fallback image url to load in case the original image fails to load | N/A |
-| spinner | boolean | Show a spinner while the image loads | true |
 | isAvatar | boolean | Sets an avatar image as a placeholder rather than image placeholder | false |
 | showPreview | boolean | Displays a full screen version of the image with gestures. | true |
 | imgCssClass | string | You can inject css classes to the image | N/A |
@@ -92,7 +90,6 @@ The `<ionic-image-cache>` component takes many attributes that allows you to cus
 | fallbackUrl | string | Sets a custom placeholder image Url while awaiting cache load | N/A |
 | spinnerName | string | Set a spinner name from the list of ionic spinners list | dots |
 | spinnerColor | string | Set a spinner color from your variable set at variables.scss e.g primary | Default |
-| fallbackUrl | string | Sets a custom placeholder image Url while awaiting cache load | N/A |
 | alt | string | Sets an alternative text when image fails on browser | N/A |
 | enableSpinner | boolean | Enable or disable spinner | true |
 
