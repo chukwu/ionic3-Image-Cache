@@ -161,7 +161,7 @@ export class IonicImageCacheHelperProvider {
   }
 
   downloadImage(fileurl:string, platform:Platform, localFolderPath: string = "cache_assets", trustAll:boolean = true){
-    return new Promise(resolver =>{
+    return new Promise( (resolver, reject) =>{
       const fileTransfer: FileTransferObject = this.transfer.create();
     
       let ext = fileurl.split('.').pop();
@@ -187,7 +187,7 @@ export class IonicImageCacheHelperProvider {
       }, (error) => {
         // handle error
         console.log(error);
-        throw error;
+        reject(error);
       })
       fileTransfer.onProgress((listener)=> {
         this.ngZone.run(()=>{
